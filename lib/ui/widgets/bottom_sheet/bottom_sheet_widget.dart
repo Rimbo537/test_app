@@ -1,6 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:solid_bottom_sheet/solid_bottom_sheet.dart';
+import 'package:test_app/models/product_data.dart';
+import 'package:test_app/models/product_model.dart';
 import 'package:test_app/resources/app_images.dart';
 import 'package:test_app/resources/app_strings.dart';
 import 'package:test_app/ui/widgets/bottom_sheet/card_bottom_sheet.dart';
@@ -13,6 +15,7 @@ class BottomSheetWidget extends StatefulWidget {
 }
 
 class _BottomSheetWidgetState extends State<BottomSheetWidget> {
+      List<Product> product = getProduct();
   late final int cardPrice = Random().nextInt(1000);
 
   @override
@@ -45,7 +48,9 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
           ),
         ),
       ),
-      body: bodyBottomSheet(),
+      body: buildProduct(product),
     );
+     
   }
+   Widget buildProduct(List<Product> product) =>bodyBottomSheet();
 }

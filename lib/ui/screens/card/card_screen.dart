@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/models/product_data.dart';
+import 'package:test_app/models/product_model.dart';
 import 'package:test_app/ui/widgets/card/card_info_widget.dart';
 
 class CardScreen extends StatefulWidget {
@@ -9,8 +11,11 @@ class CardScreen extends StatefulWidget {
 }
 
 class _CardScreenState extends State<CardScreen> {
+  List<Product> product = getProduct();
   @override
   Widget build(BuildContext context) {
-    return const CardInfoWidget();
+    return buildProduct(product);
   }
+
+  Widget buildProduct(List<Product> product) => CardInfoWidget();
 }

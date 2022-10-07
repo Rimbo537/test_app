@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:test_app/models/product_model.dart';
 import 'package:test_app/resources/app_icons.dart';
+import 'package:test_app/resources/app_images.dart';
 import 'package:test_app/resources/app_strings.dart';
 import 'package:test_app/theme/app_colors.dart';
 import 'package:test_app/ui/widgets/bottom_sheet/bottom_sheet_widget.dart';
@@ -16,8 +18,34 @@ class MainWidget extends StatefulWidget {
 
 class _MainWidgetState extends State<MainWidget> {
   final _scaffoldKey = GlobalKey<ScaffoldState>();
+  /////////////////////////////////////////////////
+  // Product productA = Product(
+  //   nameProd: 'Айс Латте',
+
+  //   price: 55,
+  //   cashbackInt: 10,
+  //   productImg: AppImages.coffeeImg,
+  // );
+
+  // Product productB = Product(
+  //   nameProd: 'Коктейль',
+
+  //   price: 64,
+  //   cashbackInt: 8.5,
+  //   productImg: AppImages.coctailImg,
+  // );
+  
+  
+
+  /////////////////////////////////////////////////
+  
   @override
   Widget build(BuildContext context) {
+  //   print(productA.hashCode);
+  //   print(productB.hashCode);
+
+  //  print(productB== productA);
+
     return SafeArea(
       child: Scaffold(
         key: _scaffoldKey,

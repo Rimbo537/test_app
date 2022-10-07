@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/models/product_data.dart';
+import 'package:test_app/models/product_model.dart';
 import 'package:test_app/resources/app_images.dart';
 import 'package:test_app/resources/app_strings.dart';
 import 'package:test_app/theme/app_colors.dart';
@@ -13,8 +15,10 @@ class CardInfoWidget extends StatefulWidget {
 }
 
 class _CardInfoWidgetState extends State<CardInfoWidget> {
+
   @override
   Widget build(BuildContext context) {
+
     return Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -29,6 +33,7 @@ class _CardInfoWidgetState extends State<CardInfoWidget> {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           body: ListView(
+            
             children: [
               const SizedBox(height: 60),
               Padding(
@@ -87,8 +92,8 @@ class _CardInfoWidgetState extends State<CardInfoWidget> {
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.1),
-                              blurRadius: 8,
+                              color: Colors.yellow.withOpacity(0.5),
+                              blurRadius: 2,
                               offset: const Offset(0, 2),
                             ),
                           ],
