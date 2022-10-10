@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:test_app/models/product_data.dart';
 import 'package:test_app/models/product_model.dart';
 import 'package:test_app/resources/app_icons.dart';
-import 'package:test_app/resources/app_images.dart';
 import 'package:test_app/resources/app_strings.dart';
 import 'package:test_app/theme/app_colors.dart';
 
